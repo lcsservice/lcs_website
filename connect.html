@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+<!-- Is page ko search engines mein na aane do — sirf QR/direct link se khulega -->
+<meta name="robots" content="noindex, nofollow">
+<title>Connect with LCS | Lilhare Consultancy Services</title>
+<meta name="description" content="Connect with Lilhare Consultancy Services on WhatsApp, Instagram, LinkedIn, Facebook, and our website.">
+
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%231565C0'/%3E%3Ctext x='50%25' y='54%25' dominant-baseline='middle' text-anchor='middle' font-family='Arial Black,sans-serif' font-size='30' font-weight='900' fill='%23ffffff'%3ELCS%3C/text%3E%3C/svg%3E">
+
+<link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@3.29.0/dist/tabler-icons.min.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+<style>
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+:root{
+  --p:#1565C0;--pd:#0D47A1;--oc:#0288D1;
+  --gold:#C8952A;--gold-l:#E8B84B;
+  --sk:#F0F5FF;--th:#08152B;--tb:#2E4268;--tm:#64748B;
+  --bd:rgba(21,101,192,.12);
+  --fh:'Inter','Roboto','Open Sans',sans-serif;
+}
+html{-webkit-text-size-adjust:100%}
+body{
+  font-family:var(--fh);background:var(--sk);color:var(--tb);
+  min-height:100vh;display:flex;align-items:center;justify-content:center;
+  padding:32px 16px;line-height:1.5;
+  background-image:radial-gradient(circle at 50% 0%, rgba(21,101,192,.07), transparent 60%);
+}
+a:focus-visible{outline:2px solid var(--p);outline-offset:3px;border-radius:10px}
+@media (prefers-reduced-motion: reduce){*{transition:none!important;animation:none!important}}
+
+.card{
+  width:100%;max-width:440px;background:#fff;border:1.5px solid var(--bd);
+  border-radius:22px;padding:34px 26px 28px;
+  box-shadow:0 20px 60px rgba(21,101,192,.14),0 4px 16px rgba(21,101,192,.06);
+  text-align:center;position:relative;overflow:hidden;
+}
+.card::before{
+  content:'';position:absolute;top:0;left:0;right:0;height:4px;
+  background:linear-gradient(90deg,var(--gold),var(--gold-l),var(--gold));
+}
+
+/* ── LCS logo badge — drops in your real logo.png, falls back to initials ── */
+.badge{
+  width:64px;height:64px;border-radius:16px;margin:0 auto 16px;overflow:hidden;
+  background:linear-gradient(135deg,var(--pd),var(--p),var(--oc));
+  display:flex;align-items:center;justify-content:center;
+  box-shadow:0 8px 24px rgba(21,101,192,.3);
+}
+.badge-img{width:100%;height:100%;object-fit:contain;background:#fff;padding:7px}
+.badge-fallback{display:none;font-weight:900;font-size:19px;color:#fff;letter-spacing:.5px}
+
+h1{font-size:1.2rem;font-weight:800;color:var(--th);letter-spacing:-.01em;margin-bottom:6px}
+.tag{font-size:.78rem;color:var(--tm);margin-bottom:24px}
+
+/* ── 2x2 grid of platform boxes ── */
+.grid{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-bottom:12px}
+.gbox{
+  background:#fff;border:1.5px solid var(--bd);border-radius:18px;
+  padding:20px 10px 16px;display:flex;flex-direction:column;align-items:center;
+  text-align:center;text-decoration:none;color:var(--th);
+  box-shadow:0 4px 14px rgba(21,101,192,.07);
+  transition:transform .22s ease,box-shadow .22s ease,border-color .22s ease;
+}
+.gbox:hover{transform:translateY(-4px);box-shadow:0 14px 32px rgba(21,101,192,.16);border-color:rgba(21,101,192,.26)}
+.gbox:active{transform:scale(.96)}
+.gbox .gic{
+  width:50px;height:50px;border-radius:50%;display:flex;align-items:center;justify-content:center;
+  font-size:23px;color:#fff;margin-bottom:11px;box-shadow:0 6px 14px rgba(0,0,0,.14);flex-shrink:0;
+}
+.ic-wa{background:#25D366}
+.ic-ig{background:linear-gradient(135deg,#f09433,#e6683c,#dc2743,#cc2366,#bc1888)}
+.ic-li{background:#0A66C2}
+.ic-fb{background:#1877F2}
+.gbox .gt{font-size:.84rem;font-weight:700;margin-bottom:2px;letter-spacing:-.005em}
+.gbox .gs{font-size:.68rem;color:var(--tm)}
+.gbox.pending{opacity:.5;cursor:default}
+
+/* ── Website — spans full width, equal to the two boxes above it ── */
+.web-box{
+  grid-column:1 / -1;display:flex;align-items:center;gap:13px;padding:14px 18px;
+  border-radius:16px;text-decoration:none;color:#fff;
+  background:linear-gradient(135deg,#0D47A1,#1565C0,#0288D1);
+  box-shadow:0 4px 16px rgba(21,101,192,.22);
+  transition:transform .22s ease,box-shadow .22s ease;
+}
+.web-box:hover{transform:translateY(-2px);box-shadow:0 8px 24px rgba(21,101,192,.32)}
+.web-box:active{transform:scale(.97)}
+.web-box .wic{
+  width:42px;height:42px;border-radius:11px;background:rgba(255,255,255,.16);
+  display:flex;align-items:center;justify-content:center;font-size:19px;flex-shrink:0;
+}
+.web-box .wt{flex:1;text-align:left;min-width:0}
+.web-box .wt b{display:block;font-size:.85rem;font-weight:700}
+.web-box .wt span{display:block;font-size:.7rem;color:rgba(255,255,255,.82)}
+.web-box .war{font-size:16px;color:rgba(255,255,255,.72);flex-shrink:0}
+
+.foot{margin-top:24px;font-size:.68rem;color:var(--tm)}
+.foot a{color:var(--p);text-decoration:none;font-weight:600}
+
+/* ── small-phone tightening ── */
+@media (max-width:359px){
+  .card{padding:26px 16px 22px}
+  .grid{gap:8px}
+  .gbox{padding:15px 6px 13px}
+  .gbox .gic{width:42px;height:42px;font-size:19px}
+  .gbox .gt{font-size:.78rem}
+  .gbox .gs{font-size:.62rem}
+}
+
+/* ── tablet / desktop: a touch more breathing room ── */
+@media (min-width:600px){
+  .card{padding:40px 32px 32px}
+  body{padding:48px 24px}
+}
+</style>
+</head>
+<body>
+
+<div class="card">
+
+  <!-- ============================================================
+       LCS LOGO — drop your PNG at: assets/logo-2.png
+       (this is a separate logo, different from the one used on the
+       main website). If the file isn't found, it falls back to the
+       LCS initials.
+       ============================================================ -->
+  <div class="badge">
+    <img class="badge-img" src="assets/logo-2.png" alt="LCS logo"
+         onerror="this.style.display='none';this.nextElementSibling.style.display='flex';">
+    <span class="badge-fallback">LCS</span>
+  </div>
+
+  <h1>Lilhare Consultancy Services</h1>
+  <p class="tag">GST &middot; Tax &middot; Payroll &middot; Business Advisory<br>Balaghat, Madhya Pradesh</p>
+
+  <!-- ================================================================
+       EDIT LINKS HERE — sirf neeche di gayi href value badlein
+       ================================================================ -->
+  <div class="grid">
+
+    <!-- WHATSAPP -->
+    <a class="gbox" href="https://wa.me/919179600575" target="_blank" rel="noopener">
+      <span class="gic ic-wa"><i class="ti ti-brand-whatsapp"></i></span>
+      <span class="gt">WhatsApp</span>
+      <span class="gs">Chat with us</span>
+    </a>
+
+    <!-- INSTAGRAM -->
+    <a class="gbox" href="https://www.instagram.com/lilhare_accouniting_solutions?igsh=aGtoNGhzNno0aXM3" target="_blank" rel="noopener">
+      <span class="gic ic-ig"><i class="ti ti-brand-instagram"></i></span>
+      <span class="gt">Instagram</span>
+      <span class="gs">Follow us</span>
+    </a>
+
+    <!-- LINKEDIN -->
+    <a class="gbox" href="https://www.linkedin.com/in/kumar-shanu-lilhare-%F0%9F%8C%9Ffintech-706a7114b" target="_blank" rel="noopener">
+      <span class="gic ic-li"><i class="ti ti-brand-linkedin"></i></span>
+      <span class="gt">LinkedIn</span>
+      <span class="gs">Connect</span>
+    </a>
+
+    <!-- FACEBOOK — link abhi pending hai, neeche href mein apna FB page link daal dein -->
+    <a class="gbox pending" href="#" onclick="return false;">
+      <span class="gic ic-fb"><i class="ti ti-brand-facebook"></i></span>
+      <span class="gt">Facebook</span>
+      <span class="gs">Coming soon</span>
+    </a>
+
+    <!-- WEBSITE -->
+    <a class="web-box" href="https://www.lilhare.com">
+      <span class="wic"><i class="ti ti-world"></i></span>
+      <span class="wt"><b>Website</b><span>www.lilhare.com</span></span>
+      <span class="war"><i class="ti ti-chevron-right"></i></span>
+    </a>
+
+  </div>
+
+  <p class="foot">Lilhare Consultancy Services &middot; Since 1990 &middot; <a href="tel:+919179600575">Call us</a></p>
+</div>
+
+</body>
+</html>
